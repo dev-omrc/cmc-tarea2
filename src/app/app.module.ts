@@ -14,11 +14,19 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { OTPComponent } from './otp/otp.component';
+import { HomeComponent } from './home/home.component';
+import { DESComponent } from './des/des.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    OTPComponent,
+    HomeComponent,
+    DESComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
