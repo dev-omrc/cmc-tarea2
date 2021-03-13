@@ -19,6 +19,9 @@ import { HomeComponent } from './home/home.component';
 import { DESComponent } from './des/des.component';
 import { TimelineComponent } from './timeline/timeline.component';
 
+import { FormsModule } from '@angular/forms'
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input'
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +35,7 @@ import { TimelineComponent } from './timeline/timeline.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
@@ -40,7 +44,9 @@ import { TimelineComponent } from './timeline/timeline.component';
     LayoutModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
