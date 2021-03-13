@@ -1,0 +1,26 @@
+mat-card-content .cipher {
+  margin-top: 2em;
+}
+
+.cipher {
+  margin: 2em;
+}
+.decipher {
+  margin: 2em;
+}
+
+.cipher mat-card-content, .decipher mat-card-content {
+  padding: 2em;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.errorMessage {
+  color: red;
+}
+
+code{
+  font-weight: bolder;
+}
