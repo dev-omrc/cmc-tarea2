@@ -40,6 +40,9 @@ export class OTPComponent implements OnInit {
       this.errorCipher = false
       this.errorMessageCipher = ""
 
+      this.messageToCipher = this.messageToCipher.replace(/\s+/g, '')
+      this.keyToCipher = this.keyToCipher.replace(/\s+/g, '')
+
       let binaryMessage = this.binaryConvert(this.messageToCipher)
       let binaryKey = this.binaryConvert(this.keyToCipher)
       let cipherText = ""
@@ -64,6 +67,8 @@ export class OTPComponent implements OnInit {
     if((this.messageToDecipher.length > 0 && this.keyToDecipher.length > 0)){
       this.errorDecipher = false
       this.errorMessageDecipher = ""
+
+      this.keyToDecipher = this.keyToDecipher.replace(/\s+/g, '')
 
       const messageArray = this.messageToDecipher.match(/.{1,8}/g)
       const binaryKey = this.binaryConvert(this.keyToDecipher)
