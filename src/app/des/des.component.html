@@ -1,1 +1,70 @@
-<p>des works!</p>
+<mat-card>
+    <mat-card-title>DES</mat-card-title>
+    <mat-card-content>
+        <div class="container">
+            <h2>
+                <strong>Mensaje:</strong>
+            </h2>
+            <pre><code>{{ message }}</code></pre>
+        </div>
+        <div class="container">
+            <h2>
+                <strong>Llave:</strong>
+            </h2>
+            <pre><code>{{ key }}</code></pre>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="container" style="padding-top:1em">
+            <div>
+                <strong>Mensaje en binario:</strong>
+                <pre><code>{{ binaryMessage }}</code></pre>
+            </div>
+
+            <div>
+                <strong>Mensaje en binario permutación inicial:</strong>
+                <pre><code>{{ binaryMessageInitialPermutation }}</code></pre>
+            </div>
+
+            <div>
+                <strong>Llave en binario:</strong>
+                <pre><code>{{ binaryKey }}</code></pre>
+            </div>
+
+            <div>
+                <strong>Llave binaria permutada:</strong>
+                <pre><code>{{ binaryKeyPC1 }}</code></pre>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="container" style="padding-top: 1em;">
+            <div>
+                <strong>L0:</strong>
+                <pre><code>{{ leftInitial }}</code></pre>
+            </div>
+            <div>
+                <strong>R1:</strong>
+                <pre><code>{{ rightInitial }}</code></pre>
+            </div>
+            <div>
+                <strong>Expansión de R1:</strong>
+                <pre><code>{{ firstExpandedRight }}</code></pre>
+            </div>
+            <div>
+                <strong>F(R1,K1):</strong>
+                <pre><code>{{ firstRxorK }}</code></pre>
+            </div>
+            <div>
+                <strong>Cajas S:</strong>
+                <pre><code>{{ firstBoxes }}</code></pre>
+            </div>
+            <div>
+                <strong>Permutación de Cajas S:</strong>
+                <pre><code>{{ firstBinaryBoxes }}</code></pre>
+            </div>
+            <div>
+                <strong>Resultado de primera ronda:</strong>
+                <pre><code>{{ firstRoundResult }}</code></pre>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
